@@ -55,8 +55,17 @@ $.datepicker.setDefaults($.datepicker.regional["ru"]);
 $(function() {
     $("#datepicker").datepicker({
         showOn: "button",
-        buttonImage: "images/top-calendar-ico.svg",
+        buttonImage: "../images/top-calendar-arrow.png",
         buttonImageOnly: true,
         buttonText: "Дата заезда",
+    });
+});
+
+$(function() {
+    $("#datepicker-off").datepicker({
+        showOn: "button",
+        buttonImage: "../images/top-calendar-arrow.png",
+        buttonImageOnly: true,
+        buttonText: "Дата выезда",
     });
 });
