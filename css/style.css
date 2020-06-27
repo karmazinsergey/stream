@@ -100,14 +100,15 @@ a:hover {
     justify-content: flex-end;
     align-self: center;
     margin-right: 163px;
+    margin-left: 150px;
     padding-top: 15px;
     height: 110px;
+    /*Получится или нет*/
 }
 
 .top-logo {
     position: relative;
     top: -80px;
-    margin-left: 150px;
 }
 
 .input,
@@ -121,7 +122,7 @@ a:hover {
 .header-check__on,
 .header-check__off {
     width: 255px;
-    margin: 0 75px;
+    margin-left: 75px;
     padding-top: 10px;
 }
 
@@ -132,6 +133,10 @@ input {
     padding: 10px 5px;
     width: 221px;
     position: relative;
+}
+
+.header-check__on {
+    margin-left: 65px;
 }
 
 .header-check__on,
@@ -178,7 +183,7 @@ header-check__off span {
     border-radius: 75px;
     padding: 16px 36px 17px 60px;
     height: 52px;
-    margin-left: 0;
+    margin-left: 75px;
     position: relative;
 }
 
