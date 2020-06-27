@@ -5,3 +5,60 @@
     margin: 0;
     padding: 0;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    min-width: 1440px;
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.header {
+    height: 100vh;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: flex-end;
+    background: #314357;
+    height: 72px;
+    padding-right: 156px;
+}
+
+.header__menu-item {
+    display: block;
+    color: #fff;
+    float: left;
+    position: relative;
+    margin-left: 30px;
+    padding: 25px 0;
+}
+
+.header__menu-item:first-child {
+    margin-left: 0;
+}
+
+.header__menu-item a {
+    display: block;
+    padding: 25px auto;
+}
+
+.menu-item__list {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    opacity: 0;
+    background: #314357;
+    transition: opacity 0.25s ease 0.1s;
+    padding: 10px 10px;
+    width: 220px;
+}
+
+.header__menu-item:hover>.menu-item__list {
+    opacity: 1;
+}
