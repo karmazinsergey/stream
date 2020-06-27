@@ -90,3 +90,38 @@ a:hover {
     right: 0;
     top: 45%;
 }
+
+
+/* Строка выбора даты заезда и выезда */
+
+.input::placeholder {
+    font-family: "Open Sans";
+    color: #384b58;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+input {
+    border: none;
+    margin-left: 34px;
+    outline: none;
+    padding: 10px 5px;
+}
+
+.header-check__on {
+    position: relative;
+}
+
+.ui-datepicker-trigger {
+    margin-left: 5px;
+    /* position: relative; */
+    position: absolute;
+    top: 5px;
+    left: 0;
+    cursor: pointer;
+}
+
+.line {
+    display: block;
+    border-bottom: solid 1px #88939b;
+}

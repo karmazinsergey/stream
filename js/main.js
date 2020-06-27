@@ -1,23 +1,62 @@
-// Слайдер
-// $(function() {
-//     $('.fairy-tail__slider').slick({
-//         prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/arrow-prev.svg" alt=""></button>',
-//         nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/arrow-next.svg" alt=""></button>',
-//         /* автоматическое проигрывание*/
-//         autoplay: true,
-//         /* скорость проигрывания */
-//         autoplaySpeed: 3000,
-//         /* анимация перелистывания слайдера */
-//         fade: true
-//     });
-//     $('.our-trip__slider').slick({
-//         prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/arrow-prev.svg" alt=""></button>',
-//         nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/arrow-next.svg" alt=""></button>',
-//         /* автоматическое проигрывание*/
-//         autoplay: true,
-//         /* скорость проигрывания */
-//         autoplaySpeed: 3000,
-//         /* анимация перелистывания слайдера */
-//         fade: true
-//     });
-// });
+/* Локализация datepicker */
+$.datepicker.regional["ru"] = {
+    closeText: "Закрыть",
+    prevText: "Предыдущий",
+    nextText: "Следующий",
+    currentText: "Сегодня",
+    monthNames: [
+        "Январь",
+        "Февраль",
+        "Март",
+        "Апрель",
+        "Май",
+        "Июнь",
+        "Июль",
+        "Август",
+        "Сентябрь",
+        "Октябрь",
+        "Ноябрь",
+        "Декабрь",
+    ],
+    monthNamesShort: [
+        "Янв",
+        "Фев",
+        "Мар",
+        "Апр",
+        "Май",
+        "Июн",
+        "Июл",
+        "Авг",
+        "Сен",
+        "Окт",
+        "Ноя",
+        "Дек",
+    ],
+    dayNames: [
+        "воскресенье",
+        "понедельник",
+        "вторник",
+        "среда",
+        "четверг",
+        "пятница",
+        "суббота",
+    ],
+    dayNamesShort: ["вск", "пнд", "втр", "срд", "чтв", "птн", "сбт"],
+    dayNamesMin: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+    weekHeader: "Не",
+    dateFormat: "dd.mm.yy",
+    firstDay: 1,
+    isRTL: false,
+    showMonthAfterYear: false,
+    yearSuffix: "",
+};
+$.datepicker.setDefaults($.datepicker.regional["ru"]);
+
+$(function() {
+    $("#datepicker").datepicker({
+        showOn: "button",
+        buttonImage: "images/top-calendar-ico.svg",
+        buttonImageOnly: true,
+        buttonText: "Дата заезда",
+    });
+});
