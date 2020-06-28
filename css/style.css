@@ -20,6 +20,7 @@ body {
 
 .header {
     height: 100vh;
+    overflow: hidden;
 }
 
 .header__menu {
@@ -209,7 +210,7 @@ header-check__off span {
     background-image: url(../images/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 90%;
     width: 100%;
 }
 
